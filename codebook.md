@@ -12,7 +12,9 @@ The first two variables describe the subject and activity for which all other va
 ..6 WALKING_UPSTAIRS
 
 The other variables each represent the average value of all measurements collected for the given subject, activity, and "raw" variable.
-The names of the aggregated variables correspond more or less to the original variables they summarize; for the precise correspondence, see below. The signals we refer to are the signal names in the raw data.
+The names of the aggregated variables correspond to the names in "features.txt" of the original variables they summarize. 
+However, due to errors in the raw data set, these may deviate from the names of the signals in features_info.txt. 
+Therefore, for the precise correspondence of the variables in our tidy data set to the signals in the raw data ("features_info.txt"), see below.
 Values for all of the original signal variables are normalized and always between -1 and 1 (inclusive).
 
 3. "tBodyAcc-mean()-X" : average X component of the estimated mean of signal tBodyAcc
